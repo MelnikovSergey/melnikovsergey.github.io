@@ -1,1 +1,140 @@
-Test
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+  	<link href="images/favicon.ico" rel="icon" type="image/x-icon" media="screen" /> 
+	<title>West Bank | 1985</title>
+</head>
+<body onload="screenHide()">
+	<div id="container">
+
+		<div id="screensaver">
+			<img src="images/WestBank.gif" width="578" height="504" alt="Original screensaver when loading the game">
+		</div>
+
+		<div id="bang">
+			<img src="images/bang.gif" width="126" height="50" alt="Bang screen">
+		</div>
+	  
+		<div id="top"> <!-интерфейс (верх)->
+			<table id="left"> 
+	
+				<tr>
+					<th class="list">1</th>
+					<th class="list">2</th>
+					<th class="list">3</th>
+					<th class="list">4</th>
+					<th class="list">5</th>
+					<th class="list">6</th>
+				</tr>
+
+				<tr>
+					<th class="dollar">$</th>
+					<th class="dollar">$</th>
+					<th class="dollar active">$</th>
+					<th class="dollar">$</th>
+					<th class="dollar active">$</th>
+					<th class="dollar">$</th>
+				</tr>
+
+			</table>
+	
+			<table id="right"> 
+	
+				<tr>
+					<th class="list">7</th>
+					<th class="list">8</th>
+					<th class="list">9</th>
+					<th class="list">10</th>
+					<th class="list">11</th>
+					<th class="list">12</th>
+				</tr>
+	
+				<tr id="dollar">
+					<th class="dollar">$</th>
+					<th class="dollar active">$</th>
+					<th class="dollar">$</th>
+					<th class="dollar">$</th>
+					<th class="dollar">$</th>
+					<th class="dollar">$</th>
+				</tr>
+
+			</table>
+	
+			<div id="top_center-block"> <!-центральный элемент верху-> </div>
+			<div id="transaction_window"> <!-текстура-> </div> 
+			<div id="transaction_block"> <!-доллар-> </div>
+	
+		</div>
+		<div id="west_bank">	 
+			<div id="game_zone"> <!-игровое поле->
+				<div id="door_1" class="door"> </div><!-левая дверь->
+				<div id="door_2" class="door"> </div><!-средняя дверь->
+				<div id="door_3" class="door"> </div><!-правая дверь->
+			</div>
+		
+			<div id="floor"> <!-пол-> </div>
+			<div id="pay-desk"> <!-касса-> 
+				<div class="pay-desk-item-1"></div>
+				<div class="pay-desk-item-2"></div>
+				<div class="pay-desk-item-3"></div>
+			</div>
+		</div>
+		<div id="bottom"> <!-интерфейс (низ)-> 
+			<div class="score">
+				<div class="left_section">
+					<p class="score">Score:</p>
+				</div>
+				<div class="right_section" id="score">
+					<span class="num_0">0</span>
+					<span class="num_0">0</span>
+					<span class="num_0">0</span>
+					<span class="num_0">0</span>
+					<span class="num_0">0</span>
+					<span class="num_0">0</span>
+				</div>
+			</div>
+
+			<div class="lives">
+				<div class="left_section">
+					<p class="lives">Lives:</p>
+				</div>
+				<div class="right_section" id="bank_workers">
+					<span id="1">1</span>
+					<span id="2">2</span>
+					<span id="3">3</span>
+				</div>
+			</div>
+		</div>
+	
+		<button id="start">Start</button>
+		<button id="flash">Flash test</button>
+		<button id="bangBtn">Bang test</button>
+		<button id="scoreBtn">Change score test</button>
+		<button id="transactionBtn">Transaction test</button>
+	
+		<div id="game_sprite"> <!-спрайты->
+			<div id="sprite_1" class="sprite_door" class="sprite_people"> </div><!-левая дверь->
+			<div id="sprite_2" class="sprite_door" class="sprite_people"> </div><!-средняя дверь->
+			<div id="sprite_3" class="sprite_door" class="sprite_people"> </div><!-правая дверь->
+			<div id="people_1" class="sprite_people"> </div><!-персонаж из левой двери->
+			<div id="people_2" class="sprite_people"> </div><!-персонаж из средней двери->
+			<div id="people_3" class="sprite_people"> </div><!-персонаж из правой двери->
+		</div>
+	
+	</div>
+	
+	<script>
+		function screenHide() {
+			var firstScreen = document.getElementById('screensaver');
+			setTimeout(function(){
+				firstScreen.style.display="none";
+			}, 1500);
+		};
+	</script>
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

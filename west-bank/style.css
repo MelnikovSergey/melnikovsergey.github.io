@@ -1,0 +1,457 @@
+* {
+	margin: 0; 
+	padding: 0;
+ }
+
+body {
+	margin: 0; 
+	padding: 0;
+	background-color: #000;
+}
+
+#container {
+	position: relative;
+	margin: 20px auto;
+	padding: 20px;
+	width: 538px;
+	height: 464px;
+	border: 6px solid #fff;
+}
+
+#screensaver {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+#bang {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	z-index: -1;
+}
+
+#bang img {
+	margin: 150px auto;
+	display: block;
+	width: 126px;
+	height: 50px;
+}
+
+#top {
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	position: relative;
+	z-index: 2;
+}
+
+table {
+	color: #fff;
+	border-collapse: collapse;
+}
+
+#left {
+	float: left;
+	margin-left: 2px;
+}
+
+#right {
+	float: right;
+	margin-right: 2px;
+}
+
+tr,th {
+	width: 24px;
+	height: 14px;
+}
+
+tr .list {
+	font-size: 12px;
+	background-color: red;
+}
+
+tr .dollar {
+	background-color: blue;
+	border: 1px solid #fff;
+	height: 24px;
+}
+
+.dollar {
+	font-size: 0;
+	background-image: url(images/dollar_xl.gif);
+	background-position: -3px 0px;
+	background-repeat: no-repeat;
+}
+
+.active {
+	font-size: 0;
+	background-image: url(images/dollar_xl.gif);
+	background-position: -3px -28px;
+	background-repeat: no-repeat;
+}
+
+#top_center-block {
+	position: relative;
+	margin: 0 auto; 
+	padding: 0;
+	width: 52px;
+	height: 48px;
+	background-image: url(images/sprite.gif);
+	background-position: -148px 0px;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+
+#transaction_window {
+	position: absolute;
+	top: 16px;
+	left: 50%;
+	width: 32px;
+	height: 32px;
+	margin-left: -16px;
+	background-image: url(images/yellow_px.gif);
+	background-repeat: repeat;
+	z-index: 1;
+}
+
+#transaction_block {
+	position: absolute;
+	top: 16px;
+	left: 50%; 
+	width: 32px;
+	height: 32px;
+	margin-left: -16px;
+	background-image: url(images/transaction.gif);
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+#game_zone {
+	margin: 0;
+	padding: 0;
+	padding-left: 32px;
+	height: 204px;
+	background-image: url(images/bground.gif);
+	background-repeat: repeat-x;
+}
+
+.door {
+	background-image: url(images/door.gif);
+	background-repeat: no-repeat;
+	width: 136px;
+	height: 204px;
+	float: left;
+	padding-left: 32px;
+}
+
+.sprite_door {
+	background-image: url(images/door_sprite.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	width: 136px;
+	height: 188px;
+}
+
+.sprite_people {
+	background-image: url(images/sprites.png);
+	background-position: 2px 6px;
+	background-repeat: no-repeat;
+	width: 110px;
+	height: 175px;
+}
+
+.woman {
+	background-position: -560px 6px;
+}
+
+.man {
+	background-position: -895px 6px;
+}
+
+.bombBoyBoomer {
+	background-position: 2px -172px;
+}
+
+.bombBoyBoomer {
+	background-position: 2px -172px;
+}
+
+.bandit {
+	background-position: 2px 6px;
+}
+
+.renegade {
+	background-position: -338px 6px;
+}
+
+.wound {
+	background-image: url(images/red_px.gif);
+	background-repeat: repeat;
+	z-index: 100;
+}
+
+.sprite_door:hover {
+	background-image: url(images/door_sprite.png);
+	background-position: 0px -186px;
+	background-position: 0px -372px;
+	background-repeat: no-repeat;
+	width: 136px;
+	height: 180px;
+}
+
+#sprite_1 {
+	position: absolute;
+	top: 84px;
+	left: 64px;
+	z-index: 2;
+}
+
+#sprite_2 {
+	position: absolute;
+	top: 84px;
+	left: 232px;
+	z-index: 2;
+}
+
+#sprite_3 {
+	position: absolute;
+	top: 84px;
+	left: 400px;
+	z-index: 2;
+}
+
+#people_1 {
+	position: absolute;
+	top: 84px;
+	left: 64px;
+	z-index: 1;
+}
+
+#people_2 {
+	position: absolute;
+	top: 84px;
+	left: 232px;
+	z-index: 1;
+}
+
+#people_3 {
+	position: absolute;
+	top: 84px;
+	left: 400px;
+	z-index: 1;
+}
+
+#floor {
+	margin: 0;
+	padding: 0;
+	height: 46px;
+}
+
+#pay-desk {
+	margin: 0;
+	padding: 0;
+	height: 56px;
+	position: relative;
+	background-image: url(images/bank.gif);
+	background-repeat: repeat-x;
+}
+ 
+#bottom {
+	margin: 0;
+	padding: 0;
+	height: 75px;
+	color: #000;
+	font-size: 0;
+	border: 1px solid #069;
+}
+
+.score {
+	float: left;
+	margin-top: 18px;
+	padding-left: 32px;
+}
+
+.lives {
+	float: right;
+	margin-top: 18px;
+	padding-right: 32px;
+}
+
+.left_section {
+	float: left;
+	padding-right: 5px;
+}
+
+.right_section {
+	float: right;
+	padding-left: 5px;
+}
+
+p.score {
+	width: 32px;
+	height: 18px;
+	display: block;
+	margin-left: 2px;
+	margin-right: 2px;
+	background-image: url(images/sprite.gif);
+	background-position: 0px -86px;
+	background-repeat: no-repeat;
+}
+
+p.lives {
+	width: 34px;
+	height: 18px;
+	display: block;
+	background-image: url(images/sprite.gif);
+	background-position: -80px -86px;
+	background-repeat: no-repeat;
+}
+
+.score .right_section span {
+	width: 16px;
+	height: 28px;
+	margin-top: 10px;
+	display: inline-block;
+	background-image: url(images/numbers.gif);
+	background-repeat: no-repeat;
+}
+
+.num_0 {
+	background-position: 0 0;
+}
+
+.num_1 {
+	background-position: -16px 0;
+}
+
+.num_2 {
+	background-position: -32px 0;
+}
+
+.num_3 {
+	background-position: -48px 0;
+}
+
+.num_4 {
+	background-position: -64px 0;
+}
+
+.num_5 {
+	background-position: -80px 0;
+}
+
+.num_6 {
+	background-position: -96px 0;
+}
+
+.num_7 {
+	background-position: -112px 0;
+}
+
+.num_8 {
+	background-position: -128px 0;
+}
+
+.num_9 {
+	background-position: -144px 0;
+}
+
+.lives .right_section span {
+	width: 18px;
+	height: 42px;
+	margin: 0 2px;
+	display: inline-block;
+	background-image: url(images/sprite.gif);
+	background-position: -4px -38px;
+	background-repeat: no-repeat;
+}
+
+.pay-desk-item-1 {
+	position: absolute;
+	top: 26px;
+	left: 45px;
+	width: 60px;
+	height: 30px;
+	background-image: url(images/sprite.gif);
+	background-position: 0 -5px;
+	background-repeat: no-repeat;
+}
+
+.pay-desk-item-1:after {
+	content:'';
+	position: absolute;
+	top: 1px;
+	right: -62px;
+	width: 24px;
+	height: 30px;
+	background-image: url(images/sprite.gif);
+	background-position: -92px -47px;
+	background-repeat: no-repeat;
+}
+
+.pay-desk-item-2 {
+	position: absolute;
+	top: 24px;
+	left: 253px;
+	width: 88px;
+	height: 32px;
+	background-image: url(images/sprite.gif);
+	background-position: -57px 0;
+	background-repeat: no-repeat;
+}
+
+.pay-desk-item-2:before {
+	content:'';
+	position: absolute;
+	top: 2px;
+	right: 96px;
+	width: 24px;
+	height: 30px;
+	background-image: url(images/sprite.gif);
+	background-position: -92px -47px;
+	background-repeat: no-repeat;
+}
+
+.pay-desk-item-3 {
+	position: absolute;
+	top: 26px;
+	right: 64px;
+	width: 48px;
+	height: 30px;
+	background-image: url(images/sprite.gif);
+	background-position: -68px -47px;
+	background-repeat: no-repeat;
+}
+
+.pay-desk-item-3:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	right: 65px;
+	width: 24px;
+	height: 30px;
+	background-image: url(images/sprite.gif);
+	background-position: -92px -47px;
+	background-repeat: no-repeat;
+}
+
+.pay-desk-item-3:after {
+	content:'';
+	position: absolute;
+	top: 1px;
+	right: -45px;
+	width: 24px;
+	height: 30px;
+	background-image: url(images/sprite.gif);
+	background-position: -92px -47px;
+	background-repeat: no-repeat;
+}
+
+#start {
+	margin: 12px 0;
+}
